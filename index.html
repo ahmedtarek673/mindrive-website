@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinDrive — Intelligent Digital Solutions</title>
+    <meta name="description"
+        content="MinDrive delivers cutting-edge mobile applications, websites, web services, AI agents, and business automations for every industry.">
+    <meta name="keywords"
+        content="MinDrive, mobile apps, web development, AI agents, automation, digital transformation">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <!-- DNS prefetch + preconnect for ALL external domains -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://prod.spline.design">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://prod.spline.design" crossorigin>
+    <!-- Preload Spline runtime (highest priority) -->
+    <link rel="modulepreload" href="https://unpkg.com/@splinetool/runtime@1.9.82/build/runtime.js">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome — non-render-blocking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/logo.png" alt="MinDrive Logo" class="logo-img">
+            </a>
+            <ul class="nav-links desktop-nav">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn nav-cta">Get In Touch</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="canvas3d"></canvas>
+        <div id="spline-overlay"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-visual" data-animate="fade-left">
+            <div class="hero-visual-inner">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/5X18N-6eBf1S2X2d/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    We Build <span class="gradient-text">Intelligent</span><br>
+                    Digital Solutions
+                </h1>
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    From mobile apps and web platforms to AI-powered agents and business automations — MinDrive
+                    transforms your vision into powerful digital experiences that drive growth.
+                </p>
+                <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                    <a href="#contact" class="btn btn-primary">
+                        Start Your Project
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        Explore Services
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                    <div class="stat">
+                        <span class="stat-number" data-count="150">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Industries Served</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Driving Innovation with <span class="gradient-text">Purpose</span></h2>
+                <p class="section-subtitle">MinDrive is a full-service technology company that partners with businesses
+                    of all sizes to deliver intelligent digital solutions that make a real impact.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-animate="fade-up" data-delay="100">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To empower every business with cutting-edge technology that simplifies complexity, automates
+                        processes, and unlocks new opportunities for growth.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="200">
+                    <div class="about-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>We combine creative design, robust engineering, and AI-driven intelligence to build solutions
+                        that are not only functional — but transformative.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="300">
+                    <div class="about-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Our Approach</h3>
+                    <p>True partnership. We immerse ourselves in your business, understand your challenges, and
+                        architect tailored solutions that evolve with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+        <div class="section-glow"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">End-to-end digital solutions designed to accelerate your business and keep
+                    you ahead of the competition.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Mobile Applications -->
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native and cross-platform mobile apps for iOS & Android — crafted with flawless UX, high
+                        performance, and scalable architecture.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> iOS & Android Development</li>
+                        <li><i class="fas fa-check"></i> Cross-Platform (Flutter & React Native)</li>
+                        <li><i class="fas fa-check"></i> App Store Optimization</li>
+                        <li><i class="fas fa-check"></i> Push Notifications & Analytics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Responsive, fast, and stunning websites that convert visitors into customers — from landing pages
+                        to full-scale web platforms.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Web Applications</li>
+                        <li><i class="fas fa-check"></i> E-Commerce Solutions</li>
+                        <li><i class="fas fa-check"></i> CMS & Admin Dashboards</li>
+                        <li><i class="fas fa-check"></i> Progressive Web Apps (PWA)</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Web Services -->
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Web Services & APIs</h3>
+                    <p>Scalable backend systems, RESTful APIs, microservices, and cloud infrastructure that power your
+                        applications reliably.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> RESTful & GraphQL APIs</li>
+                        <li><i class="fas fa-check"></i> Cloud Architecture (AWS, GCP, Azure)</li>
+                        <li><i class="fas fa-check"></i> Database Design & Optimization</li>
+                        <li><i class="fas fa-check"></i> DevOps & CI/CD Pipelines</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- AI Agents -->
+                <div class="service-card featured" data-animate="fade-up" data-delay="100">
+                    <div class="service-card-glow"></div>
+                    <div class="service-badge">Most Requested</div>
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Agents</h3>
+                    <p>Intelligent AI agents that understand, learn, and act — from conversational bots to autonomous
+                        decision-making systems customized for your domain.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom AI Chatbots & Assistants</li>
+                        <li><i class="fas fa-check"></i> Natural Language Processing</li>
+                        <li><i class="fas fa-check"></i> Computer Vision Solutions</li>
+                        <li><i class="fas fa-check"></i> Predictive Analytics & ML Models</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Automations -->
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automations</h3>
+                    <p>End-to-end business process automation that eliminates manual work, reduces errors, and
+                        dramatically boosts productivity.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Workflow Automation</li>
+                        <li><i class="fas fa-check"></i> CRM & ERP Integration</li>
+                        <li><i class="fas fa-check"></i> Marketing Automation</li>
+                        <li><i class="fas fa-check"></i> Data Pipeline Automation</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design that combines beauty with functionality — creating interfaces people love to
+                        use and remember.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> User Research & Strategy</li>
+                        <li><i class="fas fa-check"></i> Wireframes & Prototyping</li>
+                        <li><i class="fas fa-check"></i> Brand Identity Design</li>
+                        <li><i class="fas fa-check"></i> Design Systems</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section" id="process">
+        <div class="section-glow"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">A proven methodology that transforms ideas into reality, on time and on
+                    budget.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-line"></div>
+                <div class="process-step" data-animate="fade-up" data-delay="100">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We listen, research, and define your project's vision, goals, and technical requirements
+                            through collaborative workshops.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="200">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Our designers create stunning interfaces and interactive prototypes that bring your vision to
+                            life before a single line of code is written.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="300">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Development & Testing</h3>
+                        <p>Our engineers build robust, scalable solutions using modern tech stacks with rigorous QA
+                            testing at every milestone.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate="fade-up" data-delay="400">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Launch & Support</h3>
+                        <p>Seamless deployment, performance monitoring, and ongoing support to ensure your product
+                            excels long after launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Client Stories</span>
+                <h2 class="section-title">What Our Clients <span class="gradient-text">Say</span></h2>
+                <p class="section-subtitle">Don't take our word for it — hear from the businesses we've helped
+                    transform.</p>
+            </div>
+            <div class="testimonials-slider" data-animate="fade-up" data-delay="200">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"MinDrive completely transformed our business operations. Their
+                            AI-powered automation saved us over 200 hours per month and reduced our operational costs by
+                            40%."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SA</div>
+                            <div class="author-info">
+                                <strong>Sarah Al-Rashid</strong>
+                                <span>CEO, NovaTech Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The mobile app MinDrive built for us reached 50,000 downloads in
+                            the first month. Their attention to UX detail and performance optimization is unmatched."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MK</div>
+                            <div class="author-info">
+                                <strong>Mohamed Khaled</strong>
+                                <span>Founder, FitZone App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with MinDrive felt like having a top-tier tech team
+                            in-house. They understood our healthcare challenges and built a telemedicine platform that
+                            patients love."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LH</div>
+                            <div class="author-info">
+                                <strong>Dr. Layla Hassan</strong>
+                                <span>Director, MedConnect</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prev-btn" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button class="slider-btn" id="next-btn" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind? We'd love to hear about it. Reach out and let's
+                    build something great together.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-up" data-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:mindrive.tech@gmail.com">mindrive.tech@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+201050031307">+20 105 003 1307</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST"
+                    data-animate="fade-up" data-delay="200">
+                    <input type="hidden" name="access_key" value="2ade0276-e609-4a66-bcb5-7549cda9157d">
+                    <input type="hidden" name="subject" value="New Contact from MinDrive Website">
+                    <input type="hidden" name="from_name" value="MinDrive Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="mobile">Mobile Application</option>
+                            <option value="web">Website Development</option>
+                            <option value="api">Web Services & APIs</option>
+                            <option value="ai">AI Agents</option>
+                            <option value="automation">Automations</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="MinDrive" class="footer-logo">
+                    <p>Intelligent digital solutions that drive growth. We build the technology that powers tomorrow's
+                        businesses.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Mobile Applications</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Web Services & APIs</a></li>
+                        <li><a href="#services">AI Agents</a></li>
+                        <li><a href="#services">Automations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter / X</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="mailto:mindrive.tech@gmail.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MinDrive. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="mobile-backdrop" id="mobile-backdrop"></div>
+    <ul class="nav-links mobile-nav" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li class="mobile-only"><a href="#contact" class="btn btn-primary nav-mobile-cta">Get In Touch</a></li>
+    </ul>
+
+    <script src="script.js"></script>
+    <script type="module">
+        // Use unpkg (faster than esm.sh — no on-the-fly bundling)
+        import { Application } from 'https://unpkg.com/@splinetool/runtime@1.9.82/build/runtime.js';
+
+        const canvas = document.getElementById('canvas3d');
+        const spline = new Application(canvas);
+
+        // Remove Spline watermark elements
+        function removeWatermark() {
+            document.querySelectorAll('a[href*="spline.design"], a[href*="spline"]').forEach(el => el.remove());
+            const hero = document.getElementById('home');
+            if (hero) {
+                hero.querySelectorAll('div').forEach(div => {
+                    if (div.id !== 'spline-overlay' && !div.className &&
+                        !div.closest('.hero-container') && !div.closest('.scroll-indicator') &&
+                        div !== document.querySelector('.hero-glow')) {
+                        div.style.cssText = 'display:none!important;width:0!important;height:0!important;';
+                    }
+                });
+            }
+        }
+
+        const observer = new MutationObserver(() => removeWatermark());
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // Load scene immediately
+        spline.load('https://prod.spline.design/atYzYfkaAVzB7SUM/scene.splinecode')
+            .then(() => {
+                console.log('✅ Spline 3D loaded');
+                requestAnimationFrame(() => canvas.classList.add('loaded'));
+                removeWatermark();
+                setTimeout(() => { removeWatermark(); observer.disconnect(); }, 3000);
+            })
+            .catch(err => {
+                console.error('Spline error:', err);
+                canvas.style.display = 'none';
+            });
+    </script>
+</body>
+
+</html>
